@@ -37,6 +37,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: background-color 0.3s ease;
 }
 
 .materia .btn-aprobar {
@@ -66,18 +67,20 @@ h1 {
   opacity: 0.6;
 }
 
+/* Colores por clasificación */
 .estudios-generales {
-  background-color: #b3cfff; /* azul fuerte pastel */
+  background-color: #cce0ff;
 }
 
 .estudios-profesionales {
-  background-color: #d6eaff; /* azul claro pastel */
+  background-color: #e6f0ff;
 }
 
 .prerrequisito {
-  background-color: #dbe2ea; /* azul grisáceo pastel */
+  background-color: #dde6f2;
 }
 
+/* Franjas por tipo */
 .obligatoria {
   border-left: 6px solid red;
 }
@@ -90,6 +93,7 @@ h1 {
   border-left: 6px solid orange;
 }
 
+/* Modal */
 .modal {
   position: fixed;
   top: 0;
@@ -115,11 +119,25 @@ h1 {
 .close-button {
   position: absolute;
   top: 10px;
-  right: 20px;
+  right: 15px;
   font-size: 1.5rem;
   cursor: pointer;
 }
 
 .hidden {
   display: none;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .semestre {
+    padding: 15px;
+  }
+  .materia {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .materia .btn-aprobar {
+    margin-top: 10px;
+  }
 }
