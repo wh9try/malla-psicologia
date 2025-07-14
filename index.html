@@ -1,139 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Malla Psicología Clínica UDEM</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      font-family: sans-serif;
-      background-color: #f7f9fc;
-      margin: 20px;
-    }
-
-    h1 {
-      text-align: center;
-      color: #1f3b73;
-    }
-
-    .semestre {
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      padding: 20px;
-      margin: 20px auto;
-      max-width: 900px;
-    }
-
-    .semestre h2 {
-      margin: 0;
-    }
-
-    .creditos-semestre {
-      color: gray;
-      font-size: 0.9rem;
-      margin-bottom: 15px;
-    }
-
-    .materia {
-      position: relative;
-      margin: 10px 0;
-      padding: 10px 15px;
-      border-radius: 5px;
-      cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .materia .btn-aprobar {
-      margin-left: 15px;
-      padding: 5px 10px;
-      border: none;
-      background-color: #007bff;
-      color: white;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    .materia .btn-aprobar:hover {
-      background-color: #0056b3;
-    }
-
-    .materia .info {
-      position: absolute;
-      bottom: 5px;
-      right: 10px;
-      font-size: 1.2rem;
-      color: #888;
-    }
-
-    .materia.aprobada {
-      text-decoration: line-through;
-      opacity: 0.6;
-    }
-
-    /* Colores por clasificación */
-    .estudios-generales {
-      background-color: #cce0ff;
-    }
-
-    .estudios-profesionales {
-      background-color: #e6f0ff;
-    }
-
-    .prerrequisito {
-      background-color: #dde6f2;
-    }
-
-    /* Franjas por tipo */
-    .obligatoria {
-      border-left: 6px solid red;
-    }
-
-    .electiva {
-      border-left: 6px solid gray;
-    }
-
-    .concentracion {
-      border-left: 6px solid orange;
-    }
-
-    /* Modal */
-    .modal {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0,0,0,0.5);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .modal-content {
-      background-color: white;
-      padding: 20px;
-      border-radius: 10px;
-      max-width: 500px;
-      width: 90%;
-    }
-
-    .close-button {
-      float: right;
-      font-size: 1.5rem;
-      cursor: pointer;
-    }
-
-    .hidden {
-      display: none;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <h1>Malla Curricular - Psicología Clínica UDEM</h1>
-  <div id="malla"></div>
+  <div id="container-malla"></div>
 
   <!-- Modal -->
   <div id="modal" class="modal hidden">
@@ -144,7 +18,6 @@
     </div>
   </div>
 
-  <!-- ✅ Aquí va el script -->
   <script src="script.js"></script>
 </body>
 </html>
