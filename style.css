@@ -1,0 +1,32 @@
+body {
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  margin: 20px;
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.semestre {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 250px;
+}
+
+.materia {
+  cursor: pointer;
+  padding: 5px;
+  transition: background-color 0.3s;
+}
+
+.materia:hover {
+  background-color: #dfefff;
+}
