@@ -41,7 +41,7 @@ h1 {
 }
 
 .creditos-semestre {
-  color: #6b7280; /* gris oscuro */
+  color: #6b7280;
   font-size: 0.85rem;
   margin-bottom: 18px;
   font-style: italic;
@@ -71,7 +71,6 @@ h1 {
   color: #1a3d8f;
 }
 
-/* Hover más vivo */
 .materia:hover {
   background-color: #c8dbfe;
   box-shadow: 0 4px 14px rgba(26, 61, 143, 0.25);
